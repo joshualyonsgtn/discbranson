@@ -21,3 +21,9 @@ fields:
   label: Slider Image 1
   description: 'The first image in the slider. Rough dimensions: 600px wide/ 400px
     tall.'
+- name: slider_image_2
+  type: file
+  config:
+    maxSize: 64
+  label: Slider Image 2
+  description: 'The 2nd image in the slider. Rough dimensions: 600px wide/ 400px tall.'
