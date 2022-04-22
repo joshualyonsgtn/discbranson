@@ -1,4 +1,11 @@
 ---
 label: Landing Page New
 hide_body: false
-fields: []
+fields:
+- name: top_title
+  type: text
+  config:
+    required: false
+  hidden: false
+  label: Top Title
+  description: Title for the right side of landing page
