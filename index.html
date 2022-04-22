@@ -14,6 +14,7 @@ slider_images:
 - images/slider-12.jpg
 - images/slider-4.jpg
 - images/slider-13.jpg
+header_background_image: images/background-image.jpg
 
 ---
 <!doctype html>
@@ -44,7 +45,19 @@ slider_images:
 
   <!-- Main Page Style -->
   <link href="main-style_v4.css" rel="stylesheet" />
-
+  
+  <style>
+    .product-device::before { 
+      background-image: url('{{ page.header_background_image }}'); 
+    }
+    .top-parent-container {
+  		background-image: url('{{ page.header_background_image }}');
+    }
+    @media screen and (max-width: 767px) {
+      .main-left-container { background-image: url('{{ page.header_background_image }}'); }
+    }
+  </style>
+	
   <!-- Custom styles for this template -->
 </head>
 
