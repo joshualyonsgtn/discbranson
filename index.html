@@ -139,8 +139,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
       <div class="container-fluid px-0 position-relative">
         <div class="my-slider">
-          <!--<div class="py-2 px-1"><img src="{{ page.slider_image_1 }}" class="w-100" alt=""></div>
-          <div class="py-2 px-1"><img src="{{ page.slider_image_2 }}" class="w-100" alt=""></div>-->
           {% for image in page.slider_images %}
           	<div class="py-2 px-1"><img src="{{ image | relative_url }}" class="w-100" alt=""></div>
           {% endfor %}
