@@ -3,6 +3,14 @@ top_title: Branson New Test
 top_sub_title: Exclusive Deals &amp; Discounts
 slider_image_1: images/slider-13.jpg
 slider_image_2: images/slider-2.jpg
+slider_images:
+- images/slider-11.jpg
+- images/slider-12.jpg
+- images/slider-13.jpg
+- images/slider-2.jpg
+- images/slider-3.jpg
+- images/slider-4.jpg
+- images/slider-5.jpg
 
 ---
 <!doctype html>
@@ -131,16 +139,19 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
       <div class="container-fluid px-0 position-relative">
         <div class="my-slider">
-          <div class="py-2 px-1"><img src="{{ page.slider_image_1 }}" class="w-100" alt=""></div>
-          <div class="py-2 px-1"><img src="{{ page.slider_image_2 }}" class="w-100" alt=""></div>
-          <div class="py-2 px-1"><img src="images/slider-1.jpg" class="w-100" alt=""></div>
+          <!--<div class="py-2 px-1"><img src="{{ page.slider_image_1 }}" class="w-100" alt=""></div>
+          <div class="py-2 px-1"><img src="{{ page.slider_image_2 }}" class="w-100" alt=""></div>-->
+          {% for image in page.slider_images %}
+          	<div class="py-2 px-1"><img src="{{ image | relative_url }}" class="w-100" alt=""></div>
+          {% endfor %}
+          <!--<div class="py-2 px-1"><img src="images/slider-1.jpg" class="w-100" alt=""></div>
           <div class="py-2 px-1"><img src="images/slider-10.jpg" class="w-100" alt=""></div>
           <div class="py-2 px-1"><img src="images/slider-9.jpg" class="w-100" alt=""></div>
           <div class="py-2 px-1"><img src="images/slider-5.jpg" class="w-100" alt=""></div>
           <div class="py-2 px-1"><img src="images/slider-6.jpg" class="w-100" alt=""></div>
           <div class="py-2 px-1"><img src="images/slider-4.jpg" class="w-100" alt=""></div>
           <div class="py-2 px-1"><img src="images/slider-12.jpg" class="w-100" alt=""></div>
-          <div class="py-2 px-1"><img src="images/slider-13.jpg" class="w-100" alt=""></div>
+          <div class="py-2 px-1"><img src="images/slider-13.jpg" class="w-100" alt=""></div>-->
         </div>
         <!-- or ul.my-slider > li -->
       </div>
