@@ -8,9 +8,9 @@ fields:
 - type: text
   name: top_sub_title
   label: top_sub_title
-- type: image_gallery
-  name: slider_images
-  label: slider_images
 - type: file
   name: header_background_image
   label: header_background_image
+- type: image_gallery
+  name: slider_images
+  label: slider_images
