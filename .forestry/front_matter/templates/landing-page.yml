@@ -14,3 +14,10 @@ fields:
     required: false
   label: Top Sub-Title
   description: The sub-title for the top header.
+- name: slider_image_1
+  type: file
+  config:
+    maxSize: 64
+  label: Slider Image 1
+  description: 'The first image in the slider. Rough dimensions: 600px wide/ 400px
+    tall.'
