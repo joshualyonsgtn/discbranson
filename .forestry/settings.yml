@@ -8,6 +8,7 @@ sections:
   label: Pages
   create: all
   templates:
+  - landing-page-template
   - landing-page
 - type: jekyll-posts
   label: Posts
