@@ -8,6 +8,12 @@ fields:
 - type: text
   name: top_sub_title
   label: top_sub_title
+- name: slider_1
+  type: file
+  config:
+    maxSize: 64
+  label: Slider 1
+  description: This is the first slider for the image area below the header.
 - type: image_gallery
   name: slider_images
   label: slider_images
