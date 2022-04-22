@@ -7,3 +7,10 @@ fields:
   config:
     required: false
   label: Top Title
+  description: The main title for the top header.
+- name: top_sub_title
+  type: text
+  config:
+    required: false
+  label: Top Sub-Title
+  description: The sub-title for the top header.
