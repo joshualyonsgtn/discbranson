@@ -1,0 +1,22 @@
+---
+label: Landing Page Template
+hide_body: false
+fields:
+- type: text
+  name: top_title
+  label: top_title
+- type: text
+  name: top_sub_title
+  label: top_sub_title
+- type: file
+  name: slider_image_1
+  label: slider_image_1
+- type: file
+  name: slider_image_2
+  label: slider_image_2
+- type: image_gallery
+  name: slider_images
+  label: slider_images
+- type: file
+  name: header_background_image
+  label: header_background_image
