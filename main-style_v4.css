@@ -171,6 +171,11 @@
        * Dummy devices (replace them with your own or something else entirely!)
        */
 
+#mainBodyTop {
+  position: relative;
+  z-index: 2;
+}
+
 .product-device-outer {
   background: rgba(25,25,25,.10);
 }
