@@ -4,6 +4,13 @@ auto_deploy: false
 admin_path: "/admin"
 webhook_url: 
 sections:
+- type: directory
+  path: index.html
+  label: New Directory
+  create: all
+  match: "**/*"
+  templates:
+  - landing-page-template
 - type: document
   path: document
   label: Document
