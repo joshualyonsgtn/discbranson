@@ -4,22 +4,11 @@ auto_deploy: false
 admin_path: "/admin"
 webhook_url: 
 sections:
-- type: directory
-  path: index.html
-  label: New Directory
-  create: all
-  match: "**/*"
-  templates:
-  - landing-page-template
-- type: document
-  path: document
-  label: Document
 - type: jekyll-pages
   label: Pages
   create: all
   templates:
   - landing-page-template
-  - landing-page
 - type: jekyll-posts
   label: Posts
   create: all
